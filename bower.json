@@ -1,0 +1,24 @@
+{
+  "name": "codeide",
+  "description": "The online leetcode style ide for codeforces",
+  "main": "index.js",
+  "authors": [
+    "Krishna Kalubandi <krishnakalubandi@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "codeforces",
+    "api",
+    "helper",
+    "onlineide"
+  ],
+  "homepage": "https://github.com/kp96/codeide",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
