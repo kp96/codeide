@@ -8,14 +8,16 @@
     "type": "git",
     "url": "git://github.com/kp96/codeide.git"
   },
+  "private": "true",
   "keywords": [
     "codeforces",
     "api",
     "helper",
     "onlineide"
   ],
-  "main": "index.js",
   "scripts": {
+    "start": "node bin/www",
+    "build": "webpack",
     "test": "node npm/test.js",
     "test-system": "node npm/test-system.js",
     "test-lint": "node npm/test-lint.js"
@@ -28,11 +30,19 @@
     "cheerio": "0.22.0",
     "colors": "1.1.2",
     "commander": "2.9.0",
+    "cookie-parser": "1.4.3",
+    "css-loader": "^0.28.11",
+    "express": "4.16.3",
     "lodash": "4.17.10",
     "mkdirp": "0.5.1",
     "mocha": "5.1.1",
+    "monaco-editor": "0.13.1",
+    "monaco-editor-webpack-plugin": "^1.2.0",
+    "morgan": "1.9.0",
     "ora": "1.2.0",
-    "request": "2.85.0"
+    "request": "2.85.0",
+    "serve-favicon": "2.5.0",
+    "style-loader": "^0.21.0"
   },
   "devDependencies": {
     "editorconfig": "0.13.2",
@@ -50,7 +60,9 @@
     "recursive-readdir": "2.2.1",
     "rewire": "2.5.2",
     "shelljs": "0.7.7",
-    "sinon": "2.2.0"
+    "sinon": "2.2.0",
+    "webpack": "4.8.3",
+    "webpack-cli": "2.1.4"
   },
   "engines": {
     "node": ">=8"
