@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import * as monaco from 'monaco-editor';
-
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Since packaging is done by you, you need
 // to instruct the editor how you named the
@@ -26,11 +27,11 @@ self.MonacoEnvironment = {
 
 monaco.editor.create(document.getElementById('container'), {
 	value: [
-    'function x() {',
-    '\tconsole.log("Hello world!");',
+    '#include<bits/stdc++.h>',
+    '\tint main() {',
     '}'
   ].join('\n'),
-  language: 'javascript',
+  language: 'cpp',
   minimap: { enabled: false },
   scrollBeyondLastLine: false
 });
